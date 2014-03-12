@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/fileTypeImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"
+        android:layout_width="50dp" />
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/fileTypeImage"
+        android:layout_toRightOf="@+id/fileTypeImage"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fileInfoSize"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/fileTypeImage"
+        android:layout_toRightOf="@+id/fileTypeImage"
+        android:gravity="center_vertical|left"
+        android:text="1074 kB"
+        android:textColor="#767676"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/fileInfoModified"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/fileTypeImage"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        android:text="Mod: 11:55 11/24/14"
+        android:textColor="#767676"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.connorsapps.litgit.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/cloneButton"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Clone" />
+
+        <Button
+            android:id="@+id/pullButton"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Pull" />
+
+        <Spinner
+            android:id="@+id/selectRepo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/cloneButton"
+            android:layout_toLeftOf="@id/pullButton"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    
+    <View
+        android:id="@+id/divTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff33b5e5"
+        android:layout_below="@id/topBar"
+        />
+
+    <ListView
+        android:id="@+id/fileList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/divTop" >
+    </ListView>
+
+</RelativeLayout>
