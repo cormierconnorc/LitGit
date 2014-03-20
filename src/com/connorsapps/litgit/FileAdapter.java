@@ -100,7 +100,7 @@ public class FileAdapter extends ArrayAdapter<File>
 		int hour = cal.get(Calendar.HOUR_OF_DAY);
 		int min = cal.get(Calendar.MINUTE);
 		
-		int month = cal.get(Calendar.MONTH) + Calendar.JANUARY;
+		int month = cal.get(Calendar.MONTH) + 1;
 		int day = cal.get(Calendar.DAY_OF_MONTH);
 		int year = cal.get(Calendar.YEAR);
 		
